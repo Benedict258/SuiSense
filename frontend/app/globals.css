@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap");
+
+:root {
+  --bg-start: #f7f3ea;
+  --bg-end: #e6f2ff;
+  --surface: #ffffff;
+  --text: #1f2933;
+  --muted: #5f6b7a;
+  --accent: #0ea5a4;
+  --accent-strong: #0b7f7f;
+  --border: #e3e6ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+  color: var(--text);
+  background: linear-gradient(140deg, var(--bg-start), var(--bg-end));
+  min-height: 100vh;
+}
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+
+p {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(31, 41, 55, 0.08);
+  margin-bottom: 24px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  background: var(--accent-strong);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.mono {
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  font-size: 13px;
+}
+
+.list {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.small {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  main {
+    padding: 32px 16px 64px;
+  }
+}

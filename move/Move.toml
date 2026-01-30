@@ -1,0 +1,6 @@
+[package]
+name = "suisense-core"
+version = "0.0.1"
+
+[addresses]
+suisense_core = "0x0"
