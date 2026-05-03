@@ -102,8 +102,8 @@ export default function Home() {
 
   return (
     <main>
-      <h1>SuiSense</h1>
-      <p>Intelligence + interpretation for Sui transactions and Move errors.</p>
+      <h1>SolSense</h1>
+      <p>Intelligence + interpretation for blockchain transactions and program errors.</p>
 
       <section className="card">
         <div className="row" style={{ justifyContent: "space-between", alignItems: "center" }}>
