@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "SuiSense",
-  description: "Human-readable explanations for Sui transactions and Move errors"
+  title: "SolSense",
+  description: "Human-readable explanations for blockchain transactions and program errors"
 };
 
 export default function RootLayout({

@@ -126,6 +126,7 @@ app.post("/explain/error", async (req, res) => {
 });
 
 const port = Number(process.env.PORT || 8000);
+const activeEdge = (process.env.EDGE || "solana").toLowerCase();
 app.listen(port, () => {
-  console.log(`SuiSense API listening on ${port}`);
+  console.log(`SolSense API listening on ${port} (edge: ${activeEdge})`);
 });
